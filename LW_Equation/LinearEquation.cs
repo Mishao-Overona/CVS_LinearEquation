@@ -174,15 +174,5 @@ namespace LW_Equation
             }
             return a;
         }
-        public List<double> ToDouble()
-        {
-            return new List<double>();
-            List<double> result = new List<double>();
-            foreach (float c in coefficients)
-            {
-                result.Add((double)c);
-            }
-            return result;
-        }
     }
 }

@@ -93,5 +93,23 @@ namespace LW_EquationTest
 
             Assert.IsInstanceOfType(result, typeof(ArgumentOutOfRangeException));
         }
+
+        [TestMethod]
+        public void LinearEquationTestOperatorEqPlusEq()
+        {
+            LinearEquation a = new LinearEquation(1, 2, 3);
+            LinearEquation b = new LinearEquation(4, 5);
+            LinearEquation result = a + b;
+            Assert.AreEqual(new LinearEquation(5, 2, 8), result);
+        }
+        [TestMethod]
+        public void LinearEquationTestOperatorEqMinusEq()
+        {
+            LinearEquation a = new LinearEquation(1, 2, 3);
+            LinearEquation b = new LinearEquation(4, 5);
+            LinearEquation result = a - b;
+            Assert.AreEqual(new LinearEquation(-2, 2, -3), result);
+        }
+
     }
 }

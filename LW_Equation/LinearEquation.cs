@@ -133,12 +133,6 @@ namespace LW_Equation
 
             return false;
         }
-        [TestMethod]
-        public void LinearEquationTestToString()
-        {
-            LinearEquation a = new LinearEquation(1, 2, 3, 4, 5);
-            bool ans = a.ToString() == "1,2,3,4,5";
-            Assert.IsTrue(ans);
-        }
+
     }
 }
